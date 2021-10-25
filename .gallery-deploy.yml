@@ -1,0 +1,9 @@
+image: coxauto/aws-ebcli
+stages:
+  - deploy
+jobs:
+  deploy:
+    stage: deploy
+    script:
+      - eb init gallery-test-app-$ENV_ID --platform "Python 3.8" --region "us-east-2"
+      - eb deploy tf-test-name-$ENV_ID

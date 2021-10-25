@@ -1,0 +1,29 @@
+{%- extends "bootstrap/base.html" %}
+
+{% block title %}Welcome to Gallery!{% endblock %}
+
+{% import "bootstrap/fixes.html" as fixes %}
+
+{% block head %}
+{{super()}}
+{%- endblock %}
+
+{% block styles -%}
+    {{super()}}
+{% endblock %}
+
+{% import "bootstrap/utils.html" as utils %}
+
+
+{% block content %}
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to Gallery</h1>
+      <p>You just deployed your first Gallery Environment! For more information on more advanced concepts, check out the docs.</p>
+      <p>
+        <a class="btn btn-lg btn-default" role="button"
+           href="https://docs.usegallery.com" >Docs</a>
+      </p>
+    </div>
+   </div>
+{%- endblock %}
