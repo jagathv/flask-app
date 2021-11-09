@@ -1,5 +1,5 @@
 image: coxauto/aws-ebcli
-stages:
+infra_stages:
   - deploy
 jobs:
   deploy:
